@@ -4,9 +4,9 @@ namespace WebApp.Controllers
 {
     public class HomeController : Controller
     {
-        public string Index() // Action Method
+        public IActionResult Index() // Called: action method -> to handle http requests
         {
-            return "Hello from Action Method";
+            return View();
         }
         public string Error() // Action Method
         {
